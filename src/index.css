@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #ff6600;
+    margin-top: 50px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+nav {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav h1 {
+    color: #ff6600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: #ff6600;
+}
+
+.cars{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px gray;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card button{
+    background:#ff6600;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#cc5200;
+}
+
+.payment{
+    width:400px;
+    margin:50px auto;
+    padding:30px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px gray;
+    text-align:center;
+}
+
+.payment input{
+    width:90%;
+    padding:12px;
+    margin:10px;
+}
+
+.payment button{
+    background:#ff6600;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+}
+
+.hero{
+
+    height:500px;
+
+    background:
+    url("/images/car-banner.jpg")
+    center/cover;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+.hero h1{
+
+    font-size:50px;
+
+}
+
+
+.hero p{
+
+    font-size:25px;
+
+}
+
+
+.hero button{
+
+    margin-top:20px;
+
+    padding:15px 30px;
+
+    background:#ff6600;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+}
+
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
+}
+
+.logo h1{
+    color:#ff6600;
+    font-size:30px;
+}
+
+.login-container {
+    width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #e65c00;
+}
+
+.login-container {
+    width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #e65c00;
+}
