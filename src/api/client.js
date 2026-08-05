@@ -57,3 +57,7 @@ export function createBooking(data) {
         body: JSON.stringify(data),
     });
 }
+
+export function fetchBookings() {
+    return request('/bookings');
+}

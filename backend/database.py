@@ -1,9 +1,12 @@
+from pathlib import Path
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from .models import Base, Car, User, Booking
 
-SQLALCHEMY_DATABASE_URL = 'sqlite:///./carzone.db'
+BASE_DIR = Path(__file__).resolve().parent
+SQLALCHEMY_DATABASE_URL = f'sqlite:///{BASE_DIR / "carzone.db"}'
 engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={'check_same_thread': False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
@@ -75,6 +78,10 @@ def get_cars(db):
 
 def get_car_by_id(db, car_id):
     return db.query(Car).filter(Car.id == car_id).first()
+
+
+def get_bookings(db):
+    return db.query(Booking).all()
 
 
 def get_user_by_email(db, email):

@@ -21,6 +21,9 @@ function Navbar() {
                     <Link to='/contact'>Contact</Link>
                 </li>
                 <li>
+                    <Link to='/bookings'>Bookings</Link>
+                </li>
+                <li>
                     <Link to='/register'>Register</Link>
                 </li>
                 <li>

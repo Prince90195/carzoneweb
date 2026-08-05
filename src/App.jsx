@@ -8,6 +8,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Payment from './pages/Payment';
 import Login from './pages/Login';
+import Bookings from './pages/Bookings';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path='/cars' element={<Cars />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
+                <Route path='/bookings' element={<Bookings />} />
                 <Route path='/payment' element={<Payment />} />
                 <Route path='/login' element={<Login />} />
             </Routes>
